@@ -15,3 +15,10 @@ def shorten_to_date(long_date: str) -> str:
 
 print(shorten_to_date("Monday February 2, 8pm"))
 print(shorten_to_date("Tuesday May 29, 8pm"))
+
+
+def shorten_to_date2(long_date: str) -> str:
+    return long_date[:long_date.index(",")]
+
+print(shorten_to_date2("Monday February 2, 8pm"))
+print(shorten_to_date2("Tuesday May 29, 8pm"))
