@@ -8,14 +8,11 @@ def snail_sort(array: list) -> list:
     result = []
     while array:
         result += array.pop(0)
-        print(array)
         if array and array[0]:
             for row in array:
                 result.append(row.pop())
-        print(array)
         if array:
             result += array.pop()[::-1]
-        print(array)
         if array and array[0]:
             for row in array[::-1]:
                 result.append(row.pop(0))
